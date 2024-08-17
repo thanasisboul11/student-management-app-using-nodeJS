@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/delete.css">
+    <title>All students</title>
+</head>
+<body>
+    <nav>
+        <a href="/">All students</a>
+        <a href="/addStudent">Add Student</a>
+        <a href="/removeStudent">Remove Student</a>
+        <a href="/modify">Update Student</a>
+    </nav>
+    <h1> Delete student info</h1>
+    <div style="width: 40%;
+        background-color: #eeedeb;
+        margin: auto;
+        border-radius: 20px;
+        padding: 20px;">
+        <% for(let currItem of students) { %>
+            <form action="/delete/<%= currItem._id %>" method="POST">
+                <div style="display: flex;justify-content: space-evenly;margin: 10px;">
+                    <label>Student name: <%= currItem.name%></label>
+                    <button>Delete</button>
+                </div>
+            </form>
+            <% } %>
+    </div>
+</body>
+</html> 

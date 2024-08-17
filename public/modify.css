@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    color: #444;
+    margin-top: 20px;
+}
+
+/* Modify Student Container Styles */
+.modify-student {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eeedeb;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modify-student-container {
+    margin-bottom: 20px;
+}
+
+.modify-student-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modify-student-container label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.modify-student-container input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.modify-student-container input[readonly] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.modify-student-container button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modify-student-container button:hover {
+    background-color: #4cae4c;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .modify-student {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .modify-student-container form {
+        flex-direction: column;
+    }
+
+    .modify-student-container label,
+    .modify-student-container input,
+    .modify-student-container button {
+        font-size: 14px;
+    }
+}
